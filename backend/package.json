@@ -1,0 +1,23 @@
+{
+  "name": "usac-pruebas-backend",
+  "version": "1.0.0",
+  "description": "API para carga, análisis y visualización de pruebas específicas (MongoDB + Neo4j)",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "cargar": "node src/etl/cli.js",
+    "docs": "node src/scripts/generarDocsConsultas.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "csv-parse": "^7.0.3",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mongodb": "^7.7.0",
+    "multer": "^2.5.0",
+    "neo4j-driver": "^6.2.0"
+  }
+}
